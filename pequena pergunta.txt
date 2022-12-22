@@ -1,0 +1,5 @@
+Conforme na imagem junto á este documento e ao arquivo HTML, quando abri o documento PSD pelo photopeahavia multiplas imagens abaixo das imagens principais.
+Quando abri o documento pelo GIMP ele o corrompeu, mostrando as imagens fora de suas posições e completamente quebrando o layout.
+Utilizei apenas as imagens visiveis, caso seja nescessario mostrar as outras imagens para completar a lista, favor entrar em contato pelo Email lmedeiros045@gmail
+Grato pela oportunidade
+  -Leonardo
