@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -11,9 +12,11 @@
     *{
         padding: 0;
         margin: 0;
-        box-sizing: content-box;
+        box-sizing: border-box;
+
     }
     body{
+        position: relative;
         max-width: 100vw;
         min-height: 100vh;
         overflow-x: hidden;
@@ -21,85 +24,75 @@
     }
     header{
         position: relative;
-        background: linear-gradient(120deg, tomato 0% , crimson);
+        background:url("Imagens/bola-linhas.png"), linear-gradient(120deg, tomato 0% , crimson);
+        background-position: left;
+        background-repeat: no-repeat;
         display: flex;
         justify-content: space-between;
-        padding-bottom: 2rem;
-        margin-inline: 3rem;
+        padding: 1rem 0 1rem 0;
+        width: 100%;
+
+        
+    }
+    header ul li{
+        background: transparent;
     }
     .titulo{
-
-        margin-left: 5rem;
-        margin-top: auto;
-        margin-bottom: auto;
+        padding-left: 10%;
         flex-wrap: wrap;
         z-index: 3;
     }
-    .manda{
-        background-image: url("Imagens/Titulo.png");
-        width: 189px;
-        height: 67px;
-    }
-
     .informacoes{
+        position: relative;
         background: transparent;
         display: inline-flex;
         justify-content: flex-end;
         flex-wrap: wrap;
         z-index: 3;
+        margin-right: 10rem;
+
     }
     header h2{
-        word-break: break-all;
-        white-space: break-spaces;
+
+        word-break: break-word;
+        justify-content: flex-end;
         text-align: right;
         color: whitesmoke;
         font-weight: lighter;
         font-size: large;
-        margin: 0 10rem 0 0;
+
     }
     h2 div{
+        position: relative;
         display: inline;
         font-size: small;
         margin: 1rem;
         position: relative;
     }
 
-    .bola-linhas{
-        position: absolute;
-        top: 10%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-size:auto;
-        background-position: left;
-        z-index: 1;
-        background-image: url("Imagens/bola-linhas.png");
 
-    }
     .bolinhas{
         position: absolute;
-        top: 70%;
-        left: 30%;
+        top: 60%; left: 25%;
         z-index: 1;
-        background-image: url("Imagens/bolinhas copy.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 62px;
-        width: 37px;
     }
     .mulher{
         position: absolute;
-        bottom: -2.5rem;
-        left: 50%;
+        bottom: -25%; left: 50%;
         z-index: 2;
-        background-image: url("Imagens/mulher.png");
-        background-repeat: no-repeat;
 
-
-        height: 134px;
-        width: 153px;
+    }
+    .triangulo{
+        position: absolute;
+        top: -50%; right: -25%;
+    }
+    .zigzag{
+        position: absolute;
+        bottom: -200%; left: -80%;
+    }
+    header ul{
+        width: 100%;
+        justify-content: space-between;
 
     }
     ul{
@@ -107,84 +100,142 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
+
     li{
-        width: 45%;
+
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+
         flex-direction: column;
         margin: 1rem;
         background-color: brown;
+
+    }
+    .grande{
+        width: 100%;
+    }
+    .pequeno{
+        width: 45%;
     }
 
+
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        background-color: orangered;
+    }
+    footer aside{
+        padding: 1rem;
+        color: rgb(117, 116, 116);
+        text-align: center;
+    }
+    footer a{
+        color: inherit;
+    }
     @media only screen and (min-width: 768px) {
 
     }
 
     @media only screen and (max-width: 767px) {
-        li {
+        section li {
             width: 100%;
         }
+        header li{
+            margin: 0;
+        }
+        .bolinhas{
+            position: absolute;
+            top: 60%;
+            left: 25%;
+            z-index: 1;
+        }
+
     }
 </style>
 <header>
-    <div class="bola-linhas"></div>
 
-    <div class="titulo manda"></div>
-    <div class="bolinhas"></div>
-    <div class="mulher"> </div>
-    <div class="informacoes">
+    <ul>
+        <li>
+            <div class="titulo manda"><img src="Imagens/Titulo.png" alt="MANDA TRENDS | erro ao carregar imagem"></div>
+            <div class="bolinhas"><img src="Imagens/bolinhas copy.png" alt=""></div>
+            <div class="mulher"><img src="Imagens/mulher.png"></div>
+        </li>
+        <li>
+            <div class="informacoes">
+                <h2>
+                    NRF2020,            <br>
+                    Kobe Bryant e       <br>
+                    WhatsApp Payment    <br>
+                    <div>
+                        edição 06
+                        <div class="zigzag"><img src="Imagens/zigzag.png"></div>
+                    </div>
+                    <div class="triangulo"><img  src="Imagens/triangle.png"></div>
 
-        <h2>
-            NRF2020,
-            Kobe Bryant e
-            WhatsApp Payment
-            <div>edição 06</div>
-        </h2>
+                </h2>
+            </div>
+        </li>
 
-    </div>
+    </ul>
+
+
+
+
 </header>
 
 <section>
-<ul class="list">
-    <li>
+<ul>
+    <li class="grande">
         <picture>
-            <img src="#" width="500px" height="500px">
+            <img src="Imagens/NRFimagem.png" >
         </picture>
         <div>
             oioi
         </div>
     </li>
-    <li>
+    <li class="pequeno">
         <picture>
-            <img src="#" width="500px" height="500px">
+            <img src="Imagens/NBAimagem.png">
         </picture>
         <div>
             oioi
         </div>
     </li>
-    <li>
+    <li class="pequeno">
         <picture>
-            <img src="#" width="500px" height="500px">
+            <img  srcset="Imagens/whatsappimagem.png">
         </picture>
         <div>
             oioi
         </div>
     </li>
-    <li>
-        <picture>
-            <img src="#" width="500px" height="500px">
-        </picture>
-        <div>
-            oioi
-        </div>
-    </li>
+
 </ul>
 </section>
 
+<footer>
+    <main>
+        <img  src="Imagens/logo/assinatura.png">
+    </main>
+    <aside>
+        Copyright ® Mandarin. Todos os direitos reservados. <br>
+        Caso não deseje mais receber nossos e-mails, por favor <a href="#">clique aqui</a>
+    </aside>
+
+</footer>
 
 
 </body>
