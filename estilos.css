@@ -1,0 +1,263 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    position: relative;
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 1rem;
+}
+li{
+    list-style: none;
+}
+/*
+    Cabeçario
+ */
+header#principal{
+    position: relative;
+    background:linear-gradient(120deg, tomato 0% , crimson);
+
+    display: flex;
+
+    padding: 1.5rem 0 1.5rem 4%;
+    width: 100%;
+
+}
+header#principal ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header#principal ul li{
+
+}
+main.informacoes{
+    position: relative;
+    z-index: 1;
+    margin-right: 10rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    word-break: break-word;
+    text-align: right;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-size: large;
+}
+.informacoes div.extra{
+    position: relative;
+    padding-top: 1rem;
+    font-size: small;
+}
+/*  Imagens cabeçario   */
+.bolinhas{
+    position: absolute;
+    top: 65%; left: 19%;
+    z-index: 1;
+}
+.mulher{
+    position: absolute;
+    bottom: -45%; left: 50%;
+    z-index: 1;
+
+}
+.triangulo{
+    z-index: 2;
+    position: absolute;
+    right: -25%;
+    top: -25%;
+}
+.zigzag{
+    position: absolute;
+    bottom: -50%; right: 0%;
+}
+.bola-listrada{
+    position: absolute;
+    top: 35%; left: 0;
+}
+.seta{
+    position: absolute;
+     bottom: 68%; left: 50%;
+}
+
+/*
+    Corpo da página.
+ */
+
+img{
+    border-radius: inherit;
+}
+
+section.noticias{
+    width: 100%;
+    height: 100%;
+
+}
+.conteudo:hover{
+    outline: 5px double black;
+    cursor: pointer;
+}
+.conteudo{
+    padding: 0.25rem;
+
+}
+.descricao{
+
+}
+
+ul.listaprincipal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    z-index: 2;
+}
+
+.listaprincipal li{
+    z-index: inherit;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+
+
+.listaprincipal li.grande{
+    width:100%;
+    height: auto;
+}
+.listaprincipal li.grande img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.listaprincipal li.pequeno{
+    margin: 1rem 1rem 1rem 0;
+
+
+}
+.listaprincipal li.pequeno img{
+    width: 100%;
+    height: 250px;
+}
+
+.descricao{
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+.descricao h2{
+
+}
+.descricao h2::first-letter{
+    text-transform: capitalize;
+}
+.descricao h3{
+    color: dimgrey;
+    font-weight: lighter;
+
+    font-size: medium;
+    word-wrap: break-word;
+
+}
+.descricao h3::first-letter{
+    text-transform: capitalize;
+}
+.descricao div{
+    position: absolute;
+    bottom: -20px; left: 0;
+    width: 40%;
+    height: 5px;
+
+}
+.descricao footer{
+    display: inline;
+    color: grey;
+    font-size: medium;
+}
+.descricao footer::before{
+    content: "Fonte: ";
+    font-style: italic;
+}
+
+.roxo{
+    background:linear-gradient(90deg, red 0%, rebeccapurple);
+}
+/*
+    Problema:
+        cada linha terá uma cor diferente,
+        logo uma  tag CSS diferente.
+
+    Ideia:
+        Utilizar javascript para conseguir as duas cores
+        para se utilizar na função de cor de fundo.
+
+        Pegar os dois pontos mais prevalecentes na imagem?
+        pegar as cores mais salientes opostas?
+        pegar cores aleatórias com a cor final OU inicio sendo a cor mais predominante na imagem
+        enquanto a outra cor é definida aleatóriamente ou seguindo uma função.
+
+    Solução:
+        Ainda inexistente, pensando em uma.
+*/
+
+.azul{
+    background:linear-gradient(90deg, cyan 0%, rebeccapurple);
+}
+.verde{
+    background:linear-gradient(90deg, teal 0%, green);
+}
+
+/*
+    Rodapé
+*/
+
+footer#unico{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer#unico main{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: orangered;
+}
+footer#unico aside{
+    padding: 1rem;
+    color: rgb(117, 116, 116);
+    text-align: center;
+}
+footer a{
+    color: inherit;
+}
+
+
+
+
+@media only screen and (max-width: 545px) {
+
+
+    .bolinhas{
+        top: 38%; left: 55%;
+
+    }
+
+}
