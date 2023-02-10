@@ -1,0 +1,120 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    margin-top: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+}
+body > main{
+    max-width: 600px;
+    /* o tamanho vem do cabeçario que é de 600px,
+        alternativamente usaria max-width:min-content
+        porem o conteudo restante do site poderia redimensiona-lo, quebrando o layout.
+     */
+}
+header {
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+section.abs{
+    position: relative;
+}
+section.abs > *:not(img){
+    position:absolute;
+}
+
+
+
+#bolinhas{
+    top: 75%;
+    left: 15rem;
+}
+#mulher{
+    position: absolute;
+    left: 50%;
+    top: 3rem;
+}
+#titulo{
+    top:2rem;
+    left: 2rem;
+}
+#titulo-palavras{
+    top: 2rem;
+    right: 2rem;
+}
+#zigzag{
+
+    right: 2rem;
+    bottom: 1.5rem;
+}
+#triangulo{
+    left: 50%;
+}
+#bola{
+
+}
+#setas{
+    top: 1rem;
+    left: 2rem;
+    right: 0;
+
+}
+
+
+
+
+
+.lista{
+    width: 100%;
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.lista > * {
+    max-width: 48%;
+    width: 100%;
+    min-height: 15px;
+
+}
+
+
+
+
+#titulo-whazapp {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    /* Dados retirados do photopea, nada chutado. */
+    width: 235px;
+    height: 95px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #231f20;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#assinatura{
+    top: 1rem;
+    left: 0;
+    right: 0;
+}
